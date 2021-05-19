@@ -16,6 +16,11 @@ body {
   text-transform: uppercase;
 }
 
+.nav-facebook-link {
+  font-size: 2rem;
+  color: #93c01f;
+}
+
 img {
   max-width: 100%;
 }
@@ -46,7 +51,7 @@ img {
 .header-box {
   width: 100%;
   height: 80px;
-  background-color: #a1bf36;
+  background-color: #93c01f;
 }
 
 .contents {
@@ -109,7 +114,7 @@ footer {
 
 .btn {
   text-decoration: none;
-  background-color: #a1bf36;
+  background-color: #93c01f;
   color: #343a40;
   font-weight: 700;
   font-size: 1.2rem;
@@ -121,7 +126,7 @@ footer {
 .btn:hover {
   background-color: #343a40;
   color: #ffffff;
-  border: 2px solid #a1bf36;
+  border: 2px solid #93c01f;
 }
 
 .flip-card {
@@ -159,7 +164,7 @@ footer {
 }
 
 .flip-card-front {
-  background-color: #a1bf36;
+  background-color: #93c01f;
   color: #343a40;
   border: 2px solid black;
   border-radius: 10px;
