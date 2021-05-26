@@ -1,8 +1,8 @@
 body {
   box-sizing: border-box;
-
   background-color: white;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -54,24 +54,59 @@ img {
   background-color: #93c01f;
 }
 
-.contents {
-  max-width: 80%;
+/*Front page main content*/
+
+main {
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 1rem;
   text-align: center;
 }
 
 .loqvist-img {
   display: block;
   margin: 20px auto;
-  width: 30%;
+  width: 100%;
   border-radius: 10%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn-container a {
+  font-size: 1rem;
 }
 
 .ucsigill-img {
   display: block;
-  width: 20%;
-  margin: 40px auto;
+  width: 40%;
+  margin: 2rem auto;
+}
+
+/*Front page aside - campaign info*/
+
+.special-offers h4 {
+  margin-bottom: 1rem;
+}
+
+.offer {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.special-offers__img {
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.offer p,
+.produkt-blad {
+  font-size: 0.9rem;
 }
 
 .card {
@@ -87,24 +122,24 @@ img {
   margin-right: 10px;
 }
 
+/*Footer*/
+
 footer {
   background-color: #343a40;
-  min-height: 225px;
+  min-height: 150px;
   margin-bottom: 0;
 }
 
 .footer-container {
-  width: 100%;
-  margin: 50px auto;
-  padding-top: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-img {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   padding: 20px;
-  border-radius: 25%;
+  border-radius: 20px;
 }
 
 .copy {
@@ -117,11 +152,14 @@ footer {
   background-color: #93c01f;
   color: #343a40;
   font-weight: 700;
-  font-size: 1.2rem;
+
   padding: 0.5em 1em;
   border-radius: 5px;
-  margin: 0 20px;
 }
+
+/* .btn + .btn {
+  margin-left: 1rem;
+} */
 
 .btn:hover {
   background-color: #343a40;
@@ -188,6 +226,31 @@ footer {
 @media (min-width: 768px) {
   .header-img {
     min-height: 20rem;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info {
+    width: 70%;
+  }
+  .special-offers {
+    width: 28%;
+    margin-top: 1.5rem;
+  }
+  .loqvist-img {
+    width: 70%;
+  }
+  .ucsigill-img {
+    width: 40%;
+    margin-top: 4rem;
+  }
+  .special-offers h4 {
+    display: none;
+  }
+
+  .offer h5 {
+    font-size: 1.3rem;
   }
 }
 
