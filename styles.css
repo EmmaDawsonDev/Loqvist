@@ -25,7 +25,7 @@ img {
   max-width: 100%;
 }
 
-.flex-row {
+/* .flex-row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -36,7 +36,7 @@ img {
 
 .row2 {
   justify-content: center;
-}
+} */
 
 .header-img {
   min-height: 150px;
@@ -93,21 +93,55 @@ img {
   margin-bottom: 1rem;
 }
 
-.offer {
+.offer,
+.tjanster-card {
   border: 1px solid black;
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 2rem;
 }
 
-.special-offers__img {
+.special-offers__img,
+.tjanster__img {
   border-radius: 5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .offer p,
 .produkt-blad {
   font-size: 0.9rem;
+}
+
+/*Tjänster page*/
+.main-tjanster {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.tjanster-card h5 {
+  font-size: 1.9rem;
+}
+
+.tjanster__img {
+  margin-top: 1rem;
+}
+
+.rotavdrag {
+  background-color: #93c01f;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.rotavdrag-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.skatteverket-link {
+  color: rgb(255, 255, 255);
 }
 
 /*Contact page*/
@@ -222,6 +256,26 @@ footer {
 @media (min-width: 540px) {
   .header-img {
     min-height: 15rem;
+  }
+  .tjanster-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .tjanster-card {
+    width: 18rem;
+  }
+  .tjanster-card h5 {
+    font-size: 1.4rem;
+  }
+  .tjanster__img {
+    height: 10rem;
+  }
+  .tjanster-info {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
