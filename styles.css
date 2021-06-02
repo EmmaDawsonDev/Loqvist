@@ -154,6 +154,23 @@ img {
   margin-right: 10px;
 }
 
+/*Partners page*/
+.main-partners {
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-img {
+  max-width: 15rem;
+  margin: 2rem 1rem;
+  display: block;
+}
+
 /*Footer*/
 
 footer {
@@ -276,6 +293,17 @@ footer {
 
     flex-direction: column;
     justify-content: space-between;
+  }
+  .main-partners {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3rem auto;
+  }
+  .partners-img {
+    max-width: 20rem;
+    margin: 1rem;
   }
 }
 
