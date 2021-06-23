@@ -73,7 +73,6 @@ img {
 }
 
 .header-box {
-  margin-top: 2rem;
   width: 100%;
   height: 80px;
   background-color: #77942e;
@@ -136,6 +135,29 @@ img {
 .offer p,
 .produkt-blad {
   font-size: 0.9rem;
+}
+
+/*Om oss page*/
+.main-om-oss {
+  margin: 2rem auto;
+}
+
+.main-om-oss h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.staff-card img {
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+.staff-card p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 
 /*Tjänster page*/
@@ -346,6 +368,15 @@ footer {
   .header-logo {
     width: 80%;
     margin: 2rem auto;
+  }
+  .main-om-oss .flex-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .main-om-oss .staff-card {
+    width: 20rem;
   }
 }
 
