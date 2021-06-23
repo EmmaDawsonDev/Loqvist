@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.navbarNav2 {
+#navbarNav {
   background-color: rgba(255, 255, 255);
 
   padding: 1rem 2rem;
@@ -32,10 +32,6 @@ body {
 .nav-facebook-link {
   font-size: 2rem;
   color: #2e3032;
-}
-
-.fb-green {
-  color: #77942e;
 }
 
 img {
@@ -75,7 +71,13 @@ img {
 .header-box {
   width: 100%;
   height: 80px;
-  background-color: #77942e;
+  background-color: #445e7d;
+
+  /* width: 100vw; */
+  background-image: url("./images/Bakgrund/Bakgrund\ och\ logga/background.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Front page main content*/
@@ -177,7 +179,8 @@ img {
 }
 
 .rotavdrag {
-  background-color: #93c01f;
+  background-color: #445e7d;
+  color: #fff;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -190,16 +193,38 @@ img {
 
 .skatteverket-link {
   color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.skatteverket-link:hover {
+  color: rgb(221, 221, 221);
+  text-decoration: underline;
 }
 
 /*Contact page*/
+.main-kontakta-oss {
+  min-height: 80vh;
+  max-width: 1440px;
+}
+
 .contact-info {
   text-align: left;
+  padding: 1rem;
 }
 
 .fas,
 .fab {
   margin-right: 10px;
+}
+
+.map {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+iframe {
+  width: 90%;
+  height: 400px;
 }
 
 /*Partners page*/
@@ -222,7 +247,7 @@ img {
 /*Footer*/
 
 footer {
-  background-color: #343a40;
+  background-color: #445e7d;
   min-height: 150px;
   margin-bottom: 0;
   display: grid;
@@ -250,8 +275,8 @@ footer {
 
 .btn {
   text-decoration: none;
-  background-color: #93c01f;
-  color: #343a40;
+  background-color: #445e7d;
+  color: #fff;
   font-weight: 700;
 
   padding: 0.5em 1em;
@@ -265,7 +290,7 @@ footer {
 .btn:hover {
   background-color: #343a40;
   color: #ffffff;
-  border: 2px solid #93c01f;
+  border: 2px solid #445e7d;
 }
 
 /* .card {
@@ -377,6 +402,22 @@ footer {
   }
   .main-om-oss .staff-card {
     width: 20rem;
+  }
+  .main-kontakta-oss {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    min-height: 65vh;
+  }
+  .contact-info {
+    margin-right: 3rem;
+  }
+  .map {
+    width: 50%;
+  }
+
+  iframe {
+    width: 100%;
   }
 }
 
