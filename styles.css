@@ -16,12 +16,11 @@ body {
   width: 100%;
 }
 
-#navbarNav {
-  background-color:rgba(255, 255, 255);
-  
+.navbarNav2 {
+  background-color: rgba(255, 255, 255);
+
   padding: 1rem 2rem;
   margin: 0 -1rem;
-
 }
 
 .navbar-nav {
@@ -69,8 +68,8 @@ img {
 }
 
 .header-logo {
-padding: 0 2rem;
-margin-top: 2.5rem;
+  padding: 0 2rem;
+  margin-top: 2.5rem;
 }
 
 .header-box {
@@ -91,11 +90,11 @@ margin-top: 2.5rem;
 
 .loqvist-img {
   margin: 20px auto;
-  }
+}
 
-  .carousel-inner {
-    border-radius: 10px;
-  }
+.carousel-inner {
+  border-radius: 10px;
+}
 
 .btn-container {
   display: flex;
@@ -306,6 +305,10 @@ footer {
     min-height: 25rem;
     background-size: cover;
   }
+  .header-logo {
+    width: 80%;
+    margin: 3rem auto;
+  }
   .tjanster-flex {
     display: flex;
     flex-wrap: wrap;
@@ -339,14 +342,20 @@ footer {
   }
 }
 
+@media (min-width: 700px) {
+  .header-logo {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
 @media (min-width: 768px) {
   .header-img {
     min-height: 50vh;
   }
   .header-logo {
-    
     margin-top: 1.8rem;
-    }
+  }
   .main {
     display: flex;
     justify-content: space-between;
@@ -377,9 +386,9 @@ footer {
 @media (min-width: 900px) {
   .header-logo {
     padding: 0 2rem;
-    place-self: center;
-    margin-top: -7rem;
-    }
+
+    width: 70%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -387,18 +396,15 @@ footer {
     margin-left: 2rem;
   }
   #navbarNav {
-    background-color:rgba(255, 255, 255, 0);
-    
+    background-color: rgba(255, 255, 255, 0);
+
     padding: 1rem 2rem;
     margin: 0 -1rem;
-  
   }
   .header-logo {
-    
-    margin-top: -5rem;
-    }
-  
-  
+    width: 60%;
+    margin-top: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -410,7 +416,12 @@ footer {
     max-height: 50rem;
   }
   .header-logo {
-    
-    margin-top: -17rem;
-    }
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header-logo {
+    margin-top: 5.5rem;
+  }
 }
