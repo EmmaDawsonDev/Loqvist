@@ -229,7 +229,7 @@ iframe {
 
 /*Partners page*/
 .main-partners {
-  max-width: 1000px;
+  max-width: 800px;
   text-align: center;
   margin: 0 auto;
   padding: 1rem;
@@ -242,6 +242,25 @@ iframe {
   max-width: 15rem;
   margin: 2rem 1rem;
   display: block;
+}
+
+/* Bildgalleri page */
+.main-bildgalleri {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bildgalleri {
+  width: 90%;
+  max-width: 20rem;
+  
 }
 
 /*Footer*/
@@ -293,57 +312,7 @@ footer {
   border: 2px solid #445e7d;
 }
 
-/* .card {
-  margin: 10px;
-} */
 
-/* .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 350px;
-  perspective: 1000px;
-  margin: 20px; /* Remove this if you don't want the 3D effect */
-/* }  */
-
-/* .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.flip-card:hover .flip-card-front {
-  transform: rotateY(180deg);
-}
-
-.flip-card:hover .flip-card-back {
-  transform: rotateY(0deg);
-} */
-
-/* .flip-card-front,
-.flip-card-back {
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-/* backface-visibility: hidden;
-} */
-
-/* .flip-card-front {
-  background-color: #93c01f;
-  color: #343a40;
-  border: 2px solid black;
-  border-radius: 10px;
-}
-
-.flip-card-back {
-  background-color: #343a40;
-  color: white;
-  border-radius: 10px;
-  transform: rotateY(180deg);
-} */
 
 /* Media queries */
 
@@ -392,6 +361,7 @@ footer {
 @media (min-width: 700px) {
   .header-logo {
     width: 80%;
+    max-width: 600px;
     margin: 2rem auto;
   }
   .main-om-oss .flex-row {
@@ -453,6 +423,10 @@ footer {
   .offer h5 {
     font-size: 1.3rem;
   }
+  .main-bildgalleri {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 900px) {
@@ -475,6 +449,7 @@ footer {
   }
   .header-logo {
     width: 60%;
+    
     margin-top: 4rem;
   }
 }
@@ -494,6 +469,6 @@ footer {
 
 @media (min-width: 1500px) {
   .header-logo {
-    margin-top: 5.5rem;
+    margin-top: 10.5rem;
   }
 }
